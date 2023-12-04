@@ -14,7 +14,6 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Movies List',
       theme: ThemeData(
-
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
@@ -35,13 +34,10 @@ class MovieListWidget extends StatelessWidget {
       body: ListView.builder(
           itemCount: titles.length,
           itemBuilder: (context, index) {
-             return ListTile(
-               title: Text(titles[index]),
-             );
-          }
-      ),
+            return ListTile(
+              title: Text(titles[index]),
+            );
+          }),
     );
   }
 }
-
-
